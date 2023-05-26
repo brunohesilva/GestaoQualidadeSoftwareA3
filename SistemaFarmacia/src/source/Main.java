@@ -1,7 +1,13 @@
 package source;
 
+import source.InterfacesView.TelaInicial;
+
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-    }
+        SwingUtilities.invokeLater(() -> {
+            new TelaInicial();
+        });    }
+
 }
