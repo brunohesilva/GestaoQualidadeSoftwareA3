@@ -8,7 +8,12 @@ class ReceitaTest {
 
     @Test
     void getIdReceita(){
-        Receita receita1 = new Receita(1);
+        Receita receita1 = new Receita(1, "Bruno");
         assertEquals(1, receita1.getIdReceita());
+    }
+    @Test
+    void getNomePaciente() {
+        Receita receita1 = new Receita(1, "Bruno");
+        assertEquals("Bruno", receita1.getNomePaciente());
     }
 }
