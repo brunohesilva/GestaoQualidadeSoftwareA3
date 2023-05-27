@@ -8,12 +8,14 @@ public class Receita {
     private String nomePaciente;
     private String nomeMedico;
     private String dataValidade;
+    private String nomeRemedio;
 
-    public Receita(int idReceita, String nomePaciente, String nomeMedico, String dataValidade) {
+    public Receita(int idReceita, String nomePaciente, String nomeMedico, String dataValidade, String nomeRemedio) {
         this.idReceita = idReceita;
         this.nomePaciente = nomePaciente;
         this.nomeMedico = nomeMedico;
         this.dataValidade = dataValidade;
+        this.nomeRemedio = nomeRemedio;
     }
 
     public int getIdReceita() {
@@ -27,6 +29,9 @@ public class Receita {
     }
     public String getDataValidade() {
         return this.dataValidade;
+    }
+    public String getNomeRemedio() {
+        return this.nomeRemedio;
     }
 
 }
