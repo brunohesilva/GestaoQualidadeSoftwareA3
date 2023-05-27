@@ -19,7 +19,7 @@ public class Remedio {
         this.quantidade = quantidade;
     }
 
-    public int getidRemedio() {
+    public int getIdRemedio() {
         return this.idRemedio;
     }
     public String getNome() {

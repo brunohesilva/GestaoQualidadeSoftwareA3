@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 class RemedioTest {
 
     @Test
-    void getidRemedio() {
+    void getIdRemedio() {
         Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula",5);
-        assertEquals(1, remedio1.getidRemedio());
+        assertEquals(1, remedio1.getIdRemedio());
     }
     @Test
     void  getName() {
