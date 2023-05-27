@@ -4,10 +4,12 @@ public class Receita {
 
     private int idReceita;
     private String nomePaciente;
+    private String nomeMedico;
 
-    public Receita(int idReceita, String nomePaciente) {
+    public Receita(int idReceita, String nomePaciente, String nomeMedico) {
         this.idReceita = idReceita;
         this.nomePaciente = nomePaciente;
+        this.nomeMedico = nomeMedico;
     }
 
     public int getIdReceita() {
@@ -15,6 +17,9 @@ public class Receita {
     }
     public String getNomePaciente() {
         return this.nomePaciente;
+    }
+    public String getNomeMedico(){
+        return this.nomeMedico;
     }
 
 }
