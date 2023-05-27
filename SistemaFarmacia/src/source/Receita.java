@@ -10,14 +10,16 @@ public class Receita {
     private String dataValidade;
     private String nomeRemedio;
     private String descricaoUso;
+    private int crm;
 
-    public Receita(int idReceita, String nomePaciente, String nomeMedico, String dataValidade, String nomeRemedio, String descricaoUso) {
+    public Receita(int idReceita, String nomePaciente, String nomeMedico, String dataValidade, String nomeRemedio, String descricaoUso, int crm) {
         this.idReceita = idReceita;
         this.nomePaciente = nomePaciente;
         this.nomeMedico = nomeMedico;
         this.dataValidade = dataValidade;
         this.nomeRemedio = nomeRemedio;
         this.descricaoUso = descricaoUso;
+        this.crm = crm;
     }
 
     public int getIdReceita() {
@@ -37,6 +39,9 @@ public class Receita {
     }
     public String getDescricaoUso() {
         return this.descricaoUso;
+    }
+    public int getCrm() {
+        return this.crm;
     }
 
 }
