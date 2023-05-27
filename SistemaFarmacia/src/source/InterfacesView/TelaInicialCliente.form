@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="source.InterfacesView.TelaInicialCliente">
+  <grid id="27dc6" binding="PainelJ" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="806" height="429"/>
+    </constraints>
+    <properties>
+      <background color="-8589569"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="6d7d5" class="javax.swing.JButton" binding="loginButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <text value="Login"/>
+        </properties>
+      </component>
+      <component id="af893" class="javax.swing.JLabel" binding="Titulo">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <focusable value="false"/>
+          <font name="JetBrains Mono Light" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="FarmaJapa"/>
+        </properties>
+      </component>
+      <component id="1293d" class="javax.swing.JButton" binding="cadastrarSeButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <alignmentY value="0.5"/>
+          <autoscrolls value="false"/>
+          <text value="Cadastrar-se"/>
+        </properties>
+      </component>
+      <component id="83e2d" class="javax.swing.JButton" binding="continuarButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <text value="Continuar"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
