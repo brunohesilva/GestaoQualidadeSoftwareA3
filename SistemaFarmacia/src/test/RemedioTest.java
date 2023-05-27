@@ -8,23 +8,28 @@ class RemedioTest {
 
     @Test
     void getidRemedio() {
-        Remedio produto1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer");
-        assertEquals(1, produto1.getidRemedio());
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertEquals(1, remedio1.getidRemedio());
     }
     @Test
     void  getName() {
-        Remedio produto1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer");
-        assertEquals("Doril", produto1.getNome());
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertEquals("Doril", remedio1.getNome());
     }
     @Test
     void getDescricao() {
-        Remedio produto1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer");
-        assertEquals("Tomou doril a dor sumiu", produto1.getDescricao());
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertEquals("Tomou doril a dor sumiu", remedio1.getDescricao());
     }
     @Test
     void getMarca() {
-        Remedio produto1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer");
-        assertEquals("Bayer", produto1.getMarca());
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertEquals("Bayer", remedio1.getMarca());
     }
-    
+    @Test
+    void getTipo() {
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertEquals("pilula", remedio1.getTipo());
+    }
+
 }
