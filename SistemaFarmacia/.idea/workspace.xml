@@ -7,6 +7,7 @@
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Remedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Remedio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RemedioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RemedioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RemedioTest.isnecessarioReceita">
+  <component name="RunManager" selected="JUnit.RemedioTest.quantidadeEstoque">
     <configuration name="RemedioTest.getTipo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -93,8 +94,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RemedioTest.quantidadeEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RemedioTest" />
+      <option name="METHOD_NAME" value="quantidadeEstoque" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RemedioTest.quantidadeEstoque" />
         <item itemvalue="JUnit.RemedioTest.isnecessarioReceita" />
         <item itemvalue="JUnit.RemedioTest.getTipo" />
       </list>
@@ -108,7 +126,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685206787884</updated>
-      <workItem from="1685206789136" duration="2942000" />
+      <workItem from="1685206789136" duration="3672000" />
     </task>
     <servers />
   </component>
@@ -122,6 +140,15 @@
           <url>file://$PROJECT_DIR$/src/source/Main.java</url>
           <line>5</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/RemedioTest.java</url>
+          <line>34</line>
+          <properties class="test.RemedioTest" method="isnecessarioReceita">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
