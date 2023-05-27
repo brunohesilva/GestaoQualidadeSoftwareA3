@@ -31,5 +31,10 @@ class RemedioTest {
         Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
         assertEquals("pilula", remedio1.getTipo());
     }
+    @Test
+    void isnecessarioReceita() {
+        Remedio remedio1 = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula");
+        assertFalse(!remedio1.isNecessarioReceita());
+    }
 
 }

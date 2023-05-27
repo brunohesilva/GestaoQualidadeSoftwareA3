@@ -7,6 +7,7 @@ public class Remedio {
     private String descricao;
     private String marca;
     private String tipo;
+    private boolean necessarioReceita;
 
     public  Remedio(int idRemedio, String nome,String descricao, String marca, String tipo) {
         this.idRemedio = idRemedio;
@@ -30,6 +31,10 @@ public class Remedio {
     }
     public String getTipo() {
       return this.tipo;
+    };
+    public boolean isNecessarioReceita() {
+        necessarioReceita = !necessarioReceita;
+        return necessarioReceita;
     };
 
 }
