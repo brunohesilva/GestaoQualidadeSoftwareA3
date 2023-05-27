@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Receita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/ReceitaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ReceitaTest.java" afterDir="false" />
     </list>
@@ -60,7 +61,23 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReceitaTest.getNomeMedico">
+  <component name="RunManager" selected="JUnit.ReceitaTest.getData">
+    <configuration name="ReceitaTest.getData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ReceitaTest" />
+      <option name="METHOD_NAME" value="getData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReceitaTest.getNomeMedico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -108,22 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemedioTest.isnecessarioReceita" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemaFarmacia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.RemedioTest" />
-      <option name="METHOD_NAME" value="isnecessarioReceita" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RemedioTest.quantidadeEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReceitaTest.getData" />
         <item itemvalue="JUnit.ReceitaTest.getNomeMedico" />
         <item itemvalue="JUnit.ReceitaTest.getNomePaciente" />
         <item itemvalue="JUnit.RemedioTest" />
         <item itemvalue="JUnit.RemedioTest.quantidadeEstoque" />
-        <item itemvalue="JUnit.RemedioTest.isnecessarioReceita" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685206787884</updated>
-      <workItem from="1685206789136" duration="5491000" />
+      <workItem from="1685206789136" duration="6237000" />
     </task>
     <servers />
   </component>
