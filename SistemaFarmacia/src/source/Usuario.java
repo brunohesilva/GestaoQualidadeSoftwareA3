@@ -9,6 +9,7 @@ public class Usuario {
     private String senha;
     private int funcionario = 0;
     private String horario;
+    private String funcao;
 
     public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario) {
         this.idUsuario = idUsuario;
@@ -19,7 +20,7 @@ public class Usuario {
         this.funcionario = funcionario;
     }
 
-    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario, String horario) {
+    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario, String horario, String funcao) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
@@ -27,7 +28,7 @@ public class Usuario {
         this.senha = senha;
         this.funcionario = funcionario;
         this.horario = horario;
-
+        this.funcao = funcao;
     }
 
     public int getIdUsuario() {
@@ -49,6 +50,10 @@ public class Usuario {
     public String getHorario() {
         return this.horario;
     }
+    public String getFuncao() {
+        return funcao;
+    }
+
     public boolean isFuncionario(){
         this.funcionario = 1;
         return true;

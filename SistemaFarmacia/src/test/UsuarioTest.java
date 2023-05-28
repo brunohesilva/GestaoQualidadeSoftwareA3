@@ -9,7 +9,7 @@ class UsuarioTest {
 
     Usuario user1;
     public UsuarioTest() {
-        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1, "09:00 até 16:00");
+        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente");
     }
 
     @Test
@@ -32,8 +32,13 @@ class UsuarioTest {
     void getSenha() {
         assertEquals("senha123", user1.getSenha());
     }
-    @Test void getHorario() {
+    @Test
+    void getHorario() {
         assertEquals("09:00 até 16:00", user1.getHorario());
+    }
+    @Test
+    void getFuncao() {
+        assertEquals("Gerente", user1.getFuncao());
     }
     @Test
     void isFuncionario() {
