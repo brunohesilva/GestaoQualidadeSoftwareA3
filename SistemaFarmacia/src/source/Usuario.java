@@ -8,7 +8,7 @@ public class Usuario {
     private String email;
     private String senha;
     private int funcionario = 0;
-    private int horario;
+    private String horario;
 
     public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario) {
         this.idUsuario = idUsuario;
@@ -19,7 +19,7 @@ public class Usuario {
         this.funcionario = funcionario;
     }
 
-    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario, int horario) {
+    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario, String horario) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
@@ -46,7 +46,7 @@ public class Usuario {
     public String getEmail() {
         return this.email;
     }
-    public int getHorario() {
+    public String getHorario() {
         return this.horario;
     }
     public boolean isFuncionario(){
