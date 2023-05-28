@@ -7,10 +7,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UsuarioTest {
 
+    Usuario user1;
+    public UsuarioTest() {
+        user1 = new Usuario(1, "Bruno");
+    }
+
     @Test
     void getIdUsuario() {
-        Usuario user1 = new Usuario(1);
         assertEquals(1, user1.getIdUsuario());
     }
-    
+    @Test
+    void getNome() {
+        assertEquals("Bruno", user1.getNome());
+    }
+
 }
