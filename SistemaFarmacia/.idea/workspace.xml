@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/source/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/UsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UsuarioTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,23 +57,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioTest.getFuncao">
-    <configuration name="ReceitaTest.getCrm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemaFarmacia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ReceitaTest" />
-      <option name="METHOD_NAME" value="getCrm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="UsuarioTest.getFuncao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -125,6 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsuarioTest.isAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UsuarioTest" />
+      <option name="METHOD_NAME" value="isAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsuarioTest.isFuncionario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -143,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsuarioTest.isAdmin" />
         <item itemvalue="JUnit.UsuarioTest.getFuncao" />
         <item itemvalue="JUnit.UsuarioTest.isFuncionario" />
         <item itemvalue="JUnit.UsuarioTest.getNome" />
         <item itemvalue="JUnit.UsuarioTest.getIdUsuario" />
-        <item itemvalue="JUnit.ReceitaTest.getCrm" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685206787884</updated>
       <workItem from="1685206789136" duration="8889000" />
-      <workItem from="1685277032846" duration="4699000" />
+      <workItem from="1685277032846" duration="5002000" />
     </task>
     <servers />
   </component>
@@ -174,6 +171,11 @@
           <url>file://$PROJECT_DIR$/src/source/Main.java</url>
           <line>5</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/UsuarioTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/RemedioTest.java</url>
