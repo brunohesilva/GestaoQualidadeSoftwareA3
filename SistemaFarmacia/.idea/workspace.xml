@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/UsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UsuarioTest.java" afterDir="false" />
     </list>
@@ -60,7 +61,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioTest.getNome">
+  <component name="RunManager" selected="JUnit.UsuarioTest.isFuncionario">
     <configuration name="ReceitaTest.getCrm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemaFarmacia" />
       <extension name="coverage">
@@ -88,22 +89,6 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.ReceitaTest" />
       <option name="METHOD_NAME" value="getDescricaoUso" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReceitaTest.getNomeRemedio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemaFarmacia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ReceitaTest" />
-      <option name="METHOD_NAME" value="getNomeRemedio" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,13 +126,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsuarioTest.isFuncionario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UsuarioTest" />
+      <option name="METHOD_NAME" value="isFuncionario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsuarioTest.isFuncionario" />
         <item itemvalue="JUnit.UsuarioTest.getNome" />
         <item itemvalue="JUnit.UsuarioTest.getIdUsuario" />
         <item itemvalue="JUnit.ReceitaTest.getCrm" />
         <item itemvalue="JUnit.ReceitaTest.getDescricaoUso" />
-        <item itemvalue="JUnit.ReceitaTest.getNomeRemedio" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685206787884</updated>
       <workItem from="1685206789136" duration="8889000" />
-      <workItem from="1685277032846" duration="2644000" />
+      <workItem from="1685277032846" duration="4394000" />
     </task>
     <servers />
   </component>

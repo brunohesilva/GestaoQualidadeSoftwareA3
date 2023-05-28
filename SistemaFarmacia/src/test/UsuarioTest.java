@@ -9,7 +9,7 @@ class UsuarioTest {
 
     Usuario user1;
     public UsuarioTest() {
-        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123");
+        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1);
     }
 
     @Test
@@ -31,6 +31,10 @@ class UsuarioTest {
     @Test
     void getSenha() {
         assertEquals("senha123", user1.getSenha());
+    }
+    @Test
+    void isFuncionario() {
+        assertTrue(user1.isFuncionario());
     }
 
 }
