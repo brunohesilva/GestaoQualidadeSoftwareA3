@@ -1,4 +1,4 @@
-package source;
+package source.Model;
 
 public class Usuario {
 

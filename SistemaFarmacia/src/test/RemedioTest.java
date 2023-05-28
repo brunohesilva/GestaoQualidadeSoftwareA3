@@ -1,5 +1,5 @@
 package test;
-import source.Remedio;
+import source.Model.Remedio;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

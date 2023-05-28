@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="source.View.TelaInicial">
+  <grid id="27dc6" binding="JpanelInicial" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="25" bottom="0" right="25"/>
+    <constraints>
+      <xy x="18" y="27" width="970" height="351"/>
+    </constraints>
+    <properties>
+      <background color="-10622465"/>
+      <doubleBuffered value="true"/>
+      <nextFocusableComponent value=""/>
+      <opaque value="true"/>
+      <requestFocusEnabled value="true"/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
+    <border type="none"/>
+    <children>
+      <component id="58c56" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Inconsolata" size="28" style="1"/>
+          <foreground color="-1"/>
+          <maximumSize width="450" height="29"/>
+          <minimumSize width="450" height="29"/>
+          <opaque value="false"/>
+          <preferredSize width="450" height="29"/>
+          <requestFocusEnabled value="false"/>
+          <text value="Seja Bem-Vindo à FarmaJapa!!"/>
+        </properties>
+      </component>
+      <component id="3fc2b" class="javax.swing.JButton" binding="cadastroButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cadastro"/>
+        </properties>
+      </component>
+      <component id="cd75" class="javax.swing.JButton" binding="continuarButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Continuar"/>
+        </properties>
+      </component>
+      <component id="ff0da" class="javax.swing.JButton" binding="loginButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Login"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

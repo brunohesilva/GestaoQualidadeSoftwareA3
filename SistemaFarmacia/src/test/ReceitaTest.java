@@ -1,5 +1,5 @@
 package test;
-import source.Receita;
+import source.Model.Receita;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
