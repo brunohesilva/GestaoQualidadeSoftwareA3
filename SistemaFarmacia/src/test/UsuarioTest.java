@@ -9,7 +9,7 @@ class UsuarioTest {
 
     Usuario user1;
     public UsuarioTest() {
-        user1 = new Usuario(1, "Bruno", 010101010101, "senha123");
+        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123");
     }
 
     @Test
@@ -25,10 +25,12 @@ class UsuarioTest {
         assertEquals(010101010101, user1.getCpf());
     }
     @Test
-    void  getSenha() {
+    void getEmail() {
+        assertEquals("bruno@gmail.com", user1.getEmail());
+    }
+    @Test
+    void getSenha() {
         assertEquals("senha123", user1.getSenha());
     }
-
-    
 
 }
