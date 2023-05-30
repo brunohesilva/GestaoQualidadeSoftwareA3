@@ -1,6 +1,8 @@
 package source.View;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class TelaLogin extends JFrame{
     private JPanel TelaLoginPanel;
@@ -9,11 +11,20 @@ public class TelaLogin extends JFrame{
     private JPasswordField passwordField1;
 
     public TelaLogin(){
-        setContentPane(TelaLoginPanel);
-        setTitle("Login");
-        setDefaultCloseOperation((EXIT_ON_CLOSE));
-        setSize(800, 600);
-        setLocationRelativeTo(null);
-        setVisible(true);
+        JFrame frameLogin = new JFrame("Login");
+        frameLogin.setContentPane(TelaLoginPanel);
+        frameLogin.setTitle("Login");
+        frameLogin.setDefaultCloseOperation((EXIT_ON_CLOSE));
+        frameLogin.setSize(800, 600);
+        frameLogin.setLocationRelativeTo(null);
+        frameLogin.setVisible(true);
+        BotaoEnviar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                frameLogin.dispose();
+//                JFrame frameAdmin = new JFrame("Login");
+//                frameAdmin.add(new TelaCadastroProduto());
+            }
+        });
     }
 }

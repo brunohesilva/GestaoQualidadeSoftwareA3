@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="source.View.TelaInicialClienteLogado">
+  <grid id="27dc6" binding="ClienteLogadoPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-10622465"/>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="94a1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1246977"/>
+          <font name="Inconsolata" size="28" style="1"/>
+          <foreground color="-1"/>
+          <text value="Tela Inicial"/>
+        </properties>
+      </component>
+      <component id="f4d22" class="javax.swing.JButton" binding="listarButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Listar"/>
+        </properties>
+      </component>
+      <component id="65967" class="javax.swing.JButton" binding="enviarButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Enviar"/>
+        </properties>
+      </component>
+      <component id="35c8a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1181185"/>
+          <font name="Inconsolata" size="12"/>
+          <foreground color="-1"/>
+          <text value="Listar Produtos"/>
+        </properties>
+      </component>
+      <component id="8b7ad" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Inconsolata" size="12"/>
+          <foreground color="-1"/>
+          <text value="Enviar Receita"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

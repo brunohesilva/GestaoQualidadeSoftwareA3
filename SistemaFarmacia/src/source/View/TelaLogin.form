@@ -51,9 +51,11 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16777216"/>
           <font name="Inconsolata" size="14"/>
           <foreground color="-1"/>
           <horizontalTextPosition value="4"/>
+          <opaque value="false"/>
           <text value="E-mail"/>
           <verticalAlignment value="3"/>
           <verticalTextPosition value="3"/>
