@@ -6,27 +6,36 @@ import java.awt.event.ActionListener;
 
 public class TelaCadastroProduto extends JFrame {
     private JPanel CadastroProdutoPanel;
-    private JTextField nomeTextField;
-    private JTextField descriçãoTextField;
-    private JTextField marcaTextField;
-    private JTextField tipoTextField;
-    private JTextField quantidadeTextField;
-    private JTextField pesoTextField;
+    private JTextField PesoTextField;
+    private JTextField DescricaoTextField;
+    private JTextField MarcaTextField;
+    private JTextField TipoTextField;
+    private JTextField QuantidadeTextField;
     private JRadioButton necessárioReceitaRadioButton;
     private JButton enviarButton;
+    private JButton voltarButton;
+    private JTextField NomeTextField;
 
     public TelaCadastroProduto(){
-        JFrame frameLogin = new JFrame("Login");
-        frameLogin.setContentPane(CadastroProdutoPanel);
-        frameLogin.setTitle("Login");
-        frameLogin.setDefaultCloseOperation((EXIT_ON_CLOSE));
-        frameLogin.setSize(800, 600);
-        frameLogin.setLocationRelativeTo(null);
-        frameLogin.setVisible(true);
+        JFrame frameCadastroProduto = new JFrame("Login");
+        frameCadastroProduto.setContentPane(CadastroProdutoPanel);
+        frameCadastroProduto.setTitle("Cadastrar Produto");
+        frameCadastroProduto.setDefaultCloseOperation((EXIT_ON_CLOSE));
+        frameCadastroProduto.setSize(800, 600);
+        frameCadastroProduto.setLocationRelativeTo(null);
+        frameCadastroProduto.setVisible(true);
         enviarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        voltarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frameCadastroProduto.dispose();
+                JFrame frameLogin = new JFrame("Login");
+                frameLogin.add(new TelaLogin());
             }
         });
     }

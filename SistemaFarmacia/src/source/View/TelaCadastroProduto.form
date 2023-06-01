@@ -25,27 +25,7 @@
           <grid row="1" column="3" row-span="7" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="709ba" class="javax.swing.JTextField" binding="nomeTextField" default-binding="true">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="21276" class="javax.swing.JTextField" binding="descriçãoTextField" default-binding="true">
-        <constraints>
-          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="462e1" class="javax.swing.JTextField" binding="marcaTextField" default-binding="true">
+      <component id="462e1" class="javax.swing.JTextField" binding="DescricaoTextField">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -55,7 +35,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="cc63b" class="javax.swing.JTextField" binding="tipoTextField" default-binding="true">
+      <component id="cc63b" class="javax.swing.JTextField" binding="MarcaTextField">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -65,7 +45,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="a390a" class="javax.swing.JTextField" binding="quantidadeTextField" default-binding="true">
+      <component id="a390a" class="javax.swing.JTextField" binding="TipoTextField">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -75,7 +55,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="ba57a" class="javax.swing.JTextField" binding="pesoTextField" default-binding="true">
+      <component id="ba57a" class="javax.swing.JTextField" binding="QuantidadeTextField">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -144,16 +124,6 @@
           <text value="Tipo"/>
         </properties>
       </component>
-      <component id="2a829" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Inconsolata" size="16"/>
-          <foreground color="-1"/>
-          <text value="Quantidade"/>
-        </properties>
-      </component>
       <component id="8db16" class="javax.swing.JLabel">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -162,6 +132,44 @@
           <font name="Inconsolata" size="16"/>
           <foreground color="-1"/>
           <text value="Peso"/>
+        </properties>
+      </component>
+      <component id="8d879" class="javax.swing.JButton" binding="voltarButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="voltar"/>
+        </properties>
+      </component>
+      <component id="2a829" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Inconsolata" size="16"/>
+          <foreground color="-1"/>
+          <text value="Quantidade"/>
+        </properties>
+      </component>
+      <component id="21276" class="javax.swing.JTextField" binding="PesoTextField">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b7354" class="javax.swing.JTextField" binding="NomeTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
         </properties>
       </component>
     </children>

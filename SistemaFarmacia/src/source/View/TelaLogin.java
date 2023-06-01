@@ -9,6 +9,7 @@ public class TelaLogin extends JFrame{
     private JButton BotaoEnviar;
     private JTextField textField1;
     private JPasswordField passwordField1;
+    private JButton voltarButton;
 
     public TelaLogin(){
         JFrame frameLogin = new JFrame("Login");
@@ -21,9 +22,17 @@ public class TelaLogin extends JFrame{
         BotaoEnviar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                frameLogin.dispose();
-//                JFrame frameAdmin = new JFrame("Login");
-//                frameAdmin.add(new TelaCadastroProduto());
+                frameLogin.dispose();
+                JFrame frameAdmin = new JFrame("Login");
+                frameAdmin.add(new TelaCadastroProduto());
+            }
+        });
+        voltarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frameLogin.dispose();
+                JFrame frameInicio = new JFrame("Login");
+                frameInicio.add(new TelaInicial());
             }
         });
     }
