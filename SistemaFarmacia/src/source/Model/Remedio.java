@@ -59,7 +59,7 @@ public class Remedio {
     }
     @Override
     public String toString() {
-        return "Rémedio [idRemedio=" + idRemedio + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", tipo=" + tipo + ", necessarioReceita=" + necessarioReceita + ", quantidade=" + quantidade + "]";
+        return "Remédio [idRemedio=" + idRemedio + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", tipo=" + tipo + ", necessarioReceita=" + necessarioReceita + ", quantidade=" + quantidade + "]";
     }
 
 }

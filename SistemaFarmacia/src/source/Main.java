@@ -22,9 +22,9 @@ public class Main extends JFrame {
         while (running) {
             System.out.println("Escolha uma opção:");
             System.out.println("1. Cadastra uma Receita");
-            System.out.println("2. Cadastra um Rémedio");
-            System.out.println("3. Lista Rémedio por ID");
-            System.out.println("4. Atualizar pessoa por ID");
+            System.out.println("2. Cadastra um Remédio");
+            System.out.println("3. Lista Remédio por ID");
+            System.out.println("4. Lista todos os Remédios");
             System.out.println("5. Deletar pessoa por ID");
             System.out.println("0. Sair");
 
@@ -41,6 +41,7 @@ public class Main extends JFrame {
                     listaByidRemedio();
                     break;
                 case 4:
+                    listAllRemedios();
                     break;
                 case 5:
                     break;
@@ -67,7 +68,7 @@ public class Main extends JFrame {
         System.out.println("Digite a data de validade:");
         String dataValidade = scanner.nextLine();
 
-        System.out.println("Digite o nome do rémedio:");
+        System.out.println("Digite o nome do remédio:");
         String nomeRemedio = scanner.nextLine();
 
         System.out.println("Digite a descrição da receita:");
@@ -82,19 +83,19 @@ public class Main extends JFrame {
     }
 
     private static void cadastroRemedio() {
-        System.out.println("Digite o ID do Rémedio:");
+        System.out.println("Digite o ID do Remédio:");
         int idRemedio = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Digite o nome do Rémedio:");
+        System.out.println("Digite o nome do Remédio:");
         String nome = scanner.nextLine();
 
-        System.out.println("Digite a descrição do rémedio:");
+        System.out.println("Digite a descrição do remédio:");
         String descricao = scanner.nextLine();
 
-        System.out.println("Digite a marca do rémedio:");
+        System.out.println("Digite a marca do remédio:");
         String marca = scanner.nextLine();
 
-        System.out.println("Digite o tipo de rémedio EX. Pílula ou Líquido:");
+        System.out.println("Digite o tipo de remédio EX. Pílula ou Líquido:");
         String tipo = scanner.nextLine();
 
         System.out.println("É necessário receita: 1 Sim 2 Não");
@@ -105,19 +106,33 @@ public class Main extends JFrame {
 
         Remedio remedio = new Remedio(idRemedio, nome, descricao, marca, tipo, quantidade);
         remedioList.add(remedio);
-        System.out.println("Rémedio cadastrada com sucesso.");
+        System.out.println("Remédio cadastrada com sucesso.");
     }
 
     private static void listaByidRemedio() {
-        System.out.println("Digite o ID do Rémedio:");
+        System.out.println("Digite o ID do Remédio:");
         int idRemedio = Integer.parseInt(scanner.nextLine());
 
         for (Remedio remedio : remedioList) {
             if (remedio.getIdRemedio() == idRemedio) {
-                System.out.println("Rémedio encontrada: " + remedio);
+                System.out.println("Remédio encontrada: " + remedio);
                 return;
             }
         }
-        System.out.println("Rémedio não encontrada com o ID fornecido.");
+        System.out.println("Remédio não encontrada com o ID fornecido.");
         }
+
+    private static void listAllRemedios() {
+        System.out.println("Listagem de todos os Remédios:");
+
+        if (remedioList.isEmpty()) {
+            System.out.println("Nenhum remédio cadastrado.");
+        } else {
+            for (Remedio remedio : remedioList) {
+                System.out.println(remedio);
+
+            }
+        }
+    }
+
     }
