@@ -26,6 +26,7 @@ public class Main extends JFrame {
             System.out.println("3. Lista Remédio por ID");
             System.out.println("4. Lista todos os Remédios");
             System.out.println("5. Atualiza remédio por ID");
+            System.out.println("6. Deleta um remédio por ID");
             System.out.println("0. Sair");
 
             int choice = Integer.parseInt(scanner.nextLine());
@@ -45,6 +46,9 @@ public class Main extends JFrame {
                     break;
                 case 5:
                     atualizaRemedioByidRemedio();
+                    break;
+                case 6:
+                    deletaRemedio();
                     break;
                 case 0:
                     running = false;
@@ -165,5 +169,18 @@ public class Main extends JFrame {
         }
         System.out.println("Remédio não encontrada com o ID fornecido.");
         }
+    private static void deletaRemedio() {
+        System.out.println("Digite o ID do remédio");
+        int idRemedio = Integer.parseInt(scanner.nextLine());
 
+        for (Remedio remedio : remedioList) {
+            if (remedio.getIdRemedio() == idRemedio) {
+                remedioList.remove(remedio);
+                System.out.println("Remédio removida com sucesso.");
+                return;
+            }
+        }
+        System.out.println("Remédio não encontrada com o ID fornecido.");
+        }
     }
+
