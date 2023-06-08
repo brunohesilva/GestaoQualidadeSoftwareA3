@@ -57,5 +57,9 @@ public class Remedio {
             return null;
         }
     }
+    @Override
+    public String toString() {
+        return "Rémedio [idRemedio=" + idRemedio + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", tipo=" + tipo + ", necessarioReceita=" + necessarioReceita + ", quantidade=" + quantidade + "]";
+    }
 
 }

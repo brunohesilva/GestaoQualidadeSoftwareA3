@@ -23,7 +23,7 @@ public class Main extends JFrame {
             System.out.println("Escolha uma opção:");
             System.out.println("1. Cadastra uma Receita");
             System.out.println("2. Cadastra um Rémedio");
-            System.out.println("3. Listar todas as pessoas");
+            System.out.println("3. Lista Rémedio por ID");
             System.out.println("4. Atualizar pessoa por ID");
             System.out.println("5. Deletar pessoa por ID");
             System.out.println("0. Sair");
@@ -38,6 +38,7 @@ public class Main extends JFrame {
                     cadastroRemedio();
                     break;
                 case 3:
+                    listaByidRemedio();
                     break;
                 case 4:
                     break;
@@ -106,4 +107,17 @@ public class Main extends JFrame {
         remedioList.add(remedio);
         System.out.println("Rémedio cadastrada com sucesso.");
     }
-}
+
+    private static void listaByidRemedio() {
+        System.out.println("Digite o ID do Rémedio:");
+        int idRemedio = Integer.parseInt(scanner.nextLine());
+
+        for (Remedio remedio : remedioList) {
+            if (remedio.getIdRemedio() == idRemedio) {
+                System.out.println("Rémedio encontrada: " + remedio);
+                return;
+            }
+        }
+        System.out.println("Rémedio não encontrada com o ID fornecido.");
+        }
+    }
