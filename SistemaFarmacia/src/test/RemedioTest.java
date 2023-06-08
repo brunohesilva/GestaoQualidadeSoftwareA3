@@ -46,5 +46,13 @@ class RemedioTest {
         boolean cadastrado = remedio.cadastroRemedio(remedio);
         assertTrue(cadastrado);
     }
+    @Test
+    void listaRemedio() {
+        RemedioTest remedioTest = new RemedioTest();
+        Remedio remedio = remedio1.listaRemedio(1);
+        assertNotNull(remedio);
+        assertEquals(1, remedio.getIdRemedio());
+        assertEquals("Doril", remedio.getNome());
+    }
 
 }

@@ -50,5 +50,12 @@ public class Remedio {
     public boolean cadastroRemedio(Remedio remedio) {
         return true;
     }
+    public  Remedio listaRemedio(int idRemedio) {
+        if (idRemedio == 1) {
+            return new Remedio(idRemedio,nome,descricao,marca,tipo,quantidade);
+        } else {
+            return null;
+        }
+    }
 
 }
