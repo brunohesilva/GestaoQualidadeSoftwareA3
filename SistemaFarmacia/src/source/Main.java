@@ -25,7 +25,7 @@ public class Main extends JFrame {
             System.out.println("2. Cadastra um Remédio");
             System.out.println("3. Lista Remédio por ID");
             System.out.println("4. Lista todos os Remédios");
-            System.out.println("5. Deletar pessoa por ID");
+            System.out.println("5. Atualiza remédio por ID");
             System.out.println("0. Sair");
 
             int choice = Integer.parseInt(scanner.nextLine());
@@ -44,6 +44,7 @@ public class Main extends JFrame {
                     listAllRemedios();
                     break;
                 case 5:
+                    atualizaRemedioByidRemedio();
                     break;
                 case 0:
                     running = false;
@@ -98,9 +99,6 @@ public class Main extends JFrame {
         System.out.println("Digite o tipo de remédio EX. Pílula ou Líquido:");
         String tipo = scanner.nextLine();
 
-        System.out.println("É necessário receita: 1 Sim 2 Não");
-        boolean necessarioReceita = Boolean.parseBoolean(scanner.nextLine());
-
         System.out.println("Digite a quantidade em estoque:");
         int quantidade = Integer.parseInt(scanner.nextLine());
 
@@ -135,6 +133,37 @@ public class Main extends JFrame {
         }
     }
 
+    private static void atualizaRemedioByidRemedio() {
+        System.out.println("Digite o ID do remédio");
+        int idRemedio = Integer.parseInt(scanner.nextLine());
 
+        for (Remedio remedio : remedioList) {
+            if (remedio.getIdRemedio() == idRemedio) {
+                System.out.println("Digite o novo nome do Remédio:");
+                String nome = scanner.nextLine();
+
+                System.out.println("Digite a nova descrição do remédio:");
+                String descricao = scanner.nextLine();
+
+                System.out.println("Digite a nova marca do remédio:");
+                String marca = scanner.nextLine();
+
+                System.out.println("Digite o novo tipo de remédio EX. Pílula ou Líquido:");
+                String tipo = scanner.nextLine();
+
+                System.out.println("Digite a nova quantidade em estoque:");
+                int quantidade = Integer.parseInt(scanner.nextLine());
+
+                remedio.setNome(nome);
+                remedio.setDescricao(descricao);
+                remedio.setMarca(marca);
+                remedio.setTipo(tipo);
+                remedio.setQuantidade(quantidade);
+                System.out.println("Remédio atualizada com sucesso.");
+                return;
+            }
+        }
+        System.out.println("Remédio não encontrada com o ID fornecido.");
+        }
 
     }

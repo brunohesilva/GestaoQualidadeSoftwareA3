@@ -37,6 +37,35 @@ public class Remedio {
     public int getQuantidade(){
       return this.quantidade;
     };
+
+    public void setIdRemedio(int idRemedio) {
+        this.idRemedio = idRemedio;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setNecessarioReceita(boolean necessarioReceita) {
+        this.necessarioReceita = necessarioReceita;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     public boolean isNecessarioReceita() {
         necessarioReceita = !necessarioReceita;
         return necessarioReceita;
