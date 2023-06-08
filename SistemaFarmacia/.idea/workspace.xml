@@ -7,7 +7,6 @@
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RemedioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RemedioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RemedioTest.cadastroRemedio">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="source.Main" />
       <module name="SistemaFarmacia" />
@@ -143,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RemedioTest.cadastroRemedio" />
         <item itemvalue="JUnit.ReceitaTest.cadastroReceita" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UsuarioTest.isAdmin" />
         <item itemvalue="JUnit.UsuarioTest.getFuncao" />
       </list>
@@ -161,7 +160,7 @@
       <updated>1685206787884</updated>
       <workItem from="1685206789136" duration="8889000" />
       <workItem from="1685277032846" duration="5607000" />
-      <workItem from="1686230271696" duration="6652000" />
+      <workItem from="1686230271696" duration="8197000" />
     </task>
     <servers />
   </component>
