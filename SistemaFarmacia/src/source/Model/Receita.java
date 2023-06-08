@@ -43,5 +43,8 @@ public class Receita {
     public int getCrm() {
         return this.crm;
     }
+    public boolean cadastroReceita(Receita receita) {
+        return true;
+    }
 
 }
