@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Model/Remedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Model/Remedio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RemedioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RemedioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RemedioTest.atualizaRemedio">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="source.Main" />
       <module name="SistemaFarmacia" />
@@ -88,6 +89,22 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.ReceitaTest" />
       <option name="METHOD_NAME" value="cadastroReceita" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemedioTest.atualizaRemedio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RemedioTest" />
+      <option name="METHOD_NAME" value="atualizaRemedio" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,29 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioTest.isAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemaFarmacia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.UsuarioTest" />
-      <option name="METHOD_NAME" value="isAdmin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RemedioTest.atualizaRemedio" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RemedioTest.listaRemedio" />
         <item itemvalue="JUnit.RemedioTest.cadastroRemedio" />
         <item itemvalue="JUnit.ReceitaTest.cadastroReceita" />
-        <item itemvalue="JUnit.UsuarioTest.isAdmin" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +162,7 @@
       <updated>1685206787884</updated>
       <workItem from="1685206789136" duration="8889000" />
       <workItem from="1685277032846" duration="5607000" />
-      <workItem from="1686230271696" duration="11449000" />
+      <workItem from="1686230271696" duration="12725000" />
     </task>
     <servers />
   </component>

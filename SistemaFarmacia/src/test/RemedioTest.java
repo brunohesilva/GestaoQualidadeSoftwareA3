@@ -54,5 +54,17 @@ class RemedioTest {
         assertEquals(1, remedio.getIdRemedio());
         assertEquals("Doril", remedio.getNome());
     }
+    @Test
+    void atualizaRemedio() {
+        RemedioTest remedioTest = new RemedioTest();
+        Remedio remedio = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula",5);
+        boolean atualizado = remedio.atualizaRemedio(1, remedio1);
+        assertTrue(atualizado);
+
+        Remedio remedio2 = remedio.listaRemedio(1);
+        assertNotNull(remedio2);
+        assertEquals("Doril", remedio2.getNome());
+        assertEquals(1, remedio2.getIdRemedio());
+    }
 
 }
