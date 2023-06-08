@@ -47,5 +47,8 @@ public class Remedio {
         }
         return true;
     }
+    public boolean cadastroRemedio(Remedio remedio) {
+        return true;
+    }
 
 }

@@ -51,7 +51,6 @@ public class Main extends JFrame {
         // new TelaInicial();
     }
 }
-
 private static void cadastroReceita() {
     System.out.println("Digite o ID da receita:");
     int idReceita = Integer.parseInt(scanner.nextLine());
@@ -78,5 +77,7 @@ private static void cadastroReceita() {
     receitaList.add(receita);
     System.out.println("Receita cadastrada com sucesso.");
 }
+
+
 
 }
