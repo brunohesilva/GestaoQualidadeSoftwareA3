@@ -89,6 +89,9 @@ public class Remedio {
     public boolean atualizaRemedio(int idRemedio, Remedio remedio) {
         return true;
     }
+    public boolean deletaRemedio(int idRemedio) {
+        return true;
+    }
     @Override
     public String toString() {
         return "Remédio [idRemedio=" + idRemedio + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", tipo=" + tipo + ", necessarioReceita=" + necessarioReceita + ", quantidade=" + quantidade + "]";

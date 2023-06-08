@@ -66,5 +66,15 @@ class RemedioTest {
         assertEquals("Doril", remedio2.getNome());
         assertEquals(1, remedio2.getIdRemedio());
     }
+    @Test
+    void deletaRemedio() {
+        RemedioTest remedioTest = new RemedioTest();
+        Remedio remedio = new Remedio(1, "Doril", "Tomou doril a dor sumiu", "Bayer", "pilula",5);
+        boolean deletado = remedio.deletaRemedio(1);
+        assertTrue(deletado);
+
+        Remedio remedio2 = remedio.listaRemedio(2);
+        assertNull(remedio2);
+    }
 
 }
