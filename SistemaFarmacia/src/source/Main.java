@@ -32,6 +32,7 @@ public class Main extends JFrame {
             System.out.println("---------------------------");
             System.out.println("7. Cadastra um Usuário");
             System.out.println("8. Busca Usuário por ID");
+            System.out.println("9. Lista todos os Usuários");
             System.out.println("---------------------------");
 
             System.out.println("0. Sair");
@@ -62,6 +63,9 @@ public class Main extends JFrame {
                     break;
                 case 8:
                     listaUsuarioByidUsuario();
+                    break;
+                case 9:
+                    listaAllUsuarios();
                     break;
                 case 0:
                     running = false;
@@ -204,7 +208,7 @@ public class Main extends JFrame {
         String nome = scanner.nextLine();
 
         System.out.println("Digite o CPF:");
-        int cpf = Integer.parseInt(scanner.nextLine());
+        String cpf = scanner.nextLine();
 
         System.out.println("Digite o email:");
         String email = scanner.nextLine();
@@ -221,7 +225,7 @@ public class Main extends JFrame {
         System.out.println("Defina o hórario do Funcionário:");
         String horario = scanner.nextLine();
 
-        System.out.println("Defina a função do Funcionário:");
+        System.out.println("Defina o cargo do Funcionário:");
         String funcao = scanner.nextLine();
 
         Usuario usuario = new Usuario(idUsuario, nome, cpf, email, senha, funcionario,horario, funcao, admin);
@@ -240,6 +244,18 @@ public class Main extends JFrame {
             }
         }
         System.out.println("Usuário não encontrada com o ID fornecido.");
+    }
+
+    private static void listaAllUsuarios() {
+        System.out.println("Listagem de todos os Usuários:");
+
+        if (usuarioList.isEmpty()) {
+            System.out.println("Nenhum usuário cadastrado.");
+        } else {
+            for (Usuario usuario : usuarioList) {
+                System.out.println(usuario);
+            }
+        }
     }
 }
 

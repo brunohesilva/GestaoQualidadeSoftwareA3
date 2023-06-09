@@ -4,7 +4,7 @@ public class Usuario {
 
     private int idUsuario;
     private String nome;
-    private int cpf;
+    private String cpf;
     private String email;
     private String senha;
     private int funcionario = 0;
@@ -12,7 +12,7 @@ public class Usuario {
     private String horario;
     private String funcao;
 
-    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario) {
+    public Usuario(int idUsuario, String nome, String cpf, String email, String senha, int funcionario) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
@@ -21,7 +21,7 @@ public class Usuario {
         this.funcionario = funcionario;
     }
 
-    public Usuario(int idUsuario, String nome, int cpf, String email, String senha, int funcionario, String horario, String funcao, int admin) {
+    public Usuario(int idUsuario, String nome, String cpf, String email, String senha, int funcionario, String horario, String funcao, int admin) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
@@ -39,7 +39,7 @@ public class Usuario {
     public String getNome() {
         return this.nome;
     }
-    public int getCpf() {
+    public String getCpf() {
         return this.cpf;
     }
     public String getSenha() {

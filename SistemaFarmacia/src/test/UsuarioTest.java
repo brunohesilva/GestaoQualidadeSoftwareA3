@@ -9,7 +9,7 @@ class UsuarioTest {
 
     Usuario user1;
     public UsuarioTest() {
-        user1 = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
+        user1 = new Usuario(1, "Bruno", "38940293827", "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
     }
 
     @Test
@@ -22,7 +22,7 @@ class UsuarioTest {
     }
     @Test
     void getCpf() {
-        assertEquals(010101010101, user1.getCpf());
+        assertEquals("38940293827", user1.getCpf());
     }
     @Test
     void getEmail() {
@@ -51,7 +51,7 @@ class UsuarioTest {
     @Test
     void cadastroUsuario() {
         UsuarioTest usuarioTest = new UsuarioTest();
-        Usuario usuario = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
+        Usuario usuario = new Usuario(1, "Bruno", "38940293827", "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
         boolean cadastrado = usuario.cadastroUsuario(usuario);
         assertTrue(cadastrado);
     }
