@@ -21,15 +21,18 @@ public class Main extends JFrame {
 
         while (running) {
             System.out.println("Escolha uma opção:");
-            System.out.println("-----------------------");
+            System.out.println("---------------------------");
             System.out.println("1. Cadastra uma Receita");
-            System.out.println("-----------------------");
+            System.out.println("---------------------------");
             System.out.println("2. Cadastra um Remédio");
             System.out.println("3. Lista Remédio por ID");
             System.out.println("4. Lista todos os Remédios");
             System.out.println("5. Atualiza remédio por ID");
             System.out.println("6. Deleta um remédio por ID");
-            System.out.println("-----------------------");
+            System.out.println("---------------------------");
+            System.out.println("7. Cadastra um Usuário");
+            System.out.println("---------------------------");
+
             System.out.println("0. Sair");
 
             int choice = Integer.parseInt(scanner.nextLine());
@@ -52,6 +55,9 @@ public class Main extends JFrame {
                     break;
                 case 6:
                     deletaRemedio();
+                    break;
+                case 7:
+                    cadastroUsuario();
                     break;
                 case 0:
                     running = false;
@@ -172,6 +178,7 @@ public class Main extends JFrame {
         }
         System.out.println("Remédio não encontrada com o ID fornecido.");
         }
+
     private static void deletaRemedio() {
         System.out.println("Digite o ID do remédio");
         int idRemedio = Integer.parseInt(scanner.nextLine());
@@ -185,5 +192,37 @@ public class Main extends JFrame {
         }
         System.out.println("Remédio não encontrada com o ID fornecido.");
         }
+    private static void cadastroUsuario() {
+        System.out.println("Digite o ID do Usuário:");
+        int idUsuario = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Digite o nome:");
+        String nome = scanner.nextLine();
+
+        System.out.println("Digite o CPF:");
+        int cpf = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Digite o email:");
+        String email = scanner.nextLine();
+
+        System.out.println("Digite a senha:");
+        String senha = scanner.nextLine();
+
+        System.out.println("Digite 1 para Funcionário e 0 para Usuário:");
+        int funcionario = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Digite 1=ADM 0=Funcionário Comun");
+        int admin = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Defina o hórario do Funcionário:");
+        String horario = scanner.nextLine();
+
+        System.out.println("Defina a função do Funcionário:");
+        String funcao = scanner.nextLine();
+
+        Usuario usuario = new Usuario(idUsuario, nome, cpf, email, senha, funcionario,horario, funcao, admin);
+        usuarioList.add(usuario);
+        System.out.println("Usuário cadastrada com sucesso.");
     }
+}
 
