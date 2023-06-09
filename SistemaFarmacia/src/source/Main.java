@@ -25,12 +25,13 @@ public class Main extends JFrame {
             System.out.println("1. Cadastra uma Receita");
             System.out.println("---------------------------");
             System.out.println("2. Cadastra um Remédio");
-            System.out.println("3. Lista Remédio por ID");
+            System.out.println("3. Busca Remédio por ID");
             System.out.println("4. Lista todos os Remédios");
             System.out.println("5. Atualiza remédio por ID");
             System.out.println("6. Deleta um remédio por ID");
             System.out.println("---------------------------");
             System.out.println("7. Cadastra um Usuário");
+            System.out.println("8. Busca Usuário por ID");
             System.out.println("---------------------------");
 
             System.out.println("0. Sair");
@@ -58,6 +59,9 @@ public class Main extends JFrame {
                     break;
                 case 7:
                     cadastroUsuario();
+                    break;
+                case 8:
+                    listaUsuarioByidUsuario();
                     break;
                 case 0:
                     running = false;
@@ -223,6 +227,19 @@ public class Main extends JFrame {
         Usuario usuario = new Usuario(idUsuario, nome, cpf, email, senha, funcionario,horario, funcao, admin);
         usuarioList.add(usuario);
         System.out.println("Usuário cadastrada com sucesso.");
+    }
+
+    private static void listaUsuarioByidUsuario() {
+        System.out.println("Digite o ID do Usuário:");
+        int idUsuario = Integer.parseInt(scanner.nextLine());
+
+        for (Usuario usuario : usuarioList) {
+            if (usuario.getIdUsuario() == idUsuario) {
+                System.out.println("Usuário encontrada: " + usuario);
+                return;
+            }
+        }
+        System.out.println("Usuário não encontrada com o ID fornecido.");
     }
 }
 
