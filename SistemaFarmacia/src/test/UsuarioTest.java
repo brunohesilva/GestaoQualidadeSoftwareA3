@@ -74,7 +74,15 @@ class UsuarioTest {
         assertNotNull(usuario2);
         assertEquals(1, usuario2.getIdUsuario());
         assertEquals("Bruno", usuario2.getNome());
+    }
+    @Test
+    void deletaUsuario() {
+        UsuarioTest usuarioTest = new UsuarioTest();
+        Usuario usuario = new Usuario(1, "Bruno", "38940293827", "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
+        boolean deletado = usuario.deletaUsuario(1);
 
+        Usuario usuario2 = usuario.listaUsuario(2);
+        assertNull(usuario2);
     }
 
 }

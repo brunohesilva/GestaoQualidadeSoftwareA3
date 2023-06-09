@@ -109,6 +109,10 @@ public class Usuario {
         return true;
     }
 
+    public boolean deletaUsuario(int idUsuario) {
+        return true;
+    }
+
     @Override
     public String toString() {
         return "Usuário [idUsuario=" + idUsuario + ", nome=" + nome + ", cpf=" + cpf + ", email=" + email + ", senha=" + senha + ", funcionario=" + funcionario + ", horario=" + horario + ", funcao=" + funcao + ", admin=" + admin + "]";
