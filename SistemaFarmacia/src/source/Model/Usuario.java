@@ -105,6 +105,10 @@ public class Usuario {
         }
     }
 
+    public boolean atualizaUsuario(int idUsuario, Usuario usuario) {
+        return true;
+    }
+
     @Override
     public String toString() {
         return "Usuário [idUsuario=" + idUsuario + ", nome=" + nome + ", cpf=" + cpf + ", email=" + email + ", senha=" + senha + ", funcionario=" + funcionario + ", horario=" + horario + ", funcao=" + funcao + ", admin=" + admin + "]";

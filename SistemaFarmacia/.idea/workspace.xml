@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/Model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/UsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UsuarioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.UsuarioTest.atualizaUsuario">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="source.Main" />
       <module name="SistemaFarmacia" />
@@ -72,22 +73,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RemedioTest.atualizaRemedio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemaFarmacia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.RemedioTest" />
-      <option name="METHOD_NAME" value="atualizaRemedio" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +88,22 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.RemedioTest" />
       <option name="METHOD_NAME" value="deletaRemedio" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioTest.atualizaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemaFarmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UsuarioTest" />
+      <option name="METHOD_NAME" value="atualizaUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsuarioTest.atualizaUsuario" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UsuarioTest.listaUsuario" />
         <item itemvalue="JUnit.UsuarioTest.cadastroUsuario" />
         <item itemvalue="JUnit.RemedioTest.deletaRemedio" />
-        <item itemvalue="JUnit.RemedioTest.atualizaRemedio" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +162,7 @@
       <workItem from="1685206789136" duration="8889000" />
       <workItem from="1685277032846" duration="5607000" />
       <workItem from="1686230271696" duration="15397000" />
-      <workItem from="1686316224722" duration="3156000" />
+      <workItem from="1686316224722" duration="4026000" />
     </task>
     <servers />
   </component>
@@ -180,6 +181,11 @@
           <url>file://$PROJECT_DIR$/src/source/Main.java</url>
           <line>180</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/source/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/RemedioTest.java</url>
