@@ -33,6 +33,7 @@ public class Main extends JFrame {
             System.out.println("7. Cadastra um Usuário");
             System.out.println("8. Busca Usuário por ID");
             System.out.println("9. Lista todos os Usuários");
+            System.out.println("10. Atualiza usuário por ID");
             System.out.println("---------------------------");
 
             System.out.println("0. Sair");
@@ -66,6 +67,9 @@ public class Main extends JFrame {
                     break;
                 case 9:
                     listaAllUsuarios();
+                    break;
+                case 10:
+                    atulizaUsuarioByIdUsuario();
                     break;
                 case 0:
                     running = false;
@@ -256,6 +260,47 @@ public class Main extends JFrame {
                 System.out.println(usuario);
             }
         }
+    }
+
+    private static void atulizaUsuarioByIdUsuario() {
+        System.out.println("Digite o ID do Usuário");
+        int idUsuario = Integer.parseInt(scanner.nextLine());
+
+        for (Usuario usuario : usuarioList) {
+            if (usuario.getIdUsuario() == idUsuario) {
+                System.out.println("Digite o novo Nome:");
+                String nome = scanner.nextLine();
+
+                System.out.println("Digite o novo Email:");
+                String email = scanner.nextLine();
+
+                System.out.println("Digite a nova Senha:");
+                String senha = scanner.nextLine();
+
+                System.out.println("Digite o novo tipo de Usuário EX. 1=Funcionário 0=Usuário:");
+                int funcionario = Integer.parseInt(scanner.nextLine());
+
+                System.out.println("Digite o novo tipo de Funcionário EX. 1=ADM 0=Comun:");
+                int admin = Integer.parseInt(scanner.nextLine());
+
+                System.out.println("Digite o novo Hórario:");
+                String horario = scanner.nextLine();
+
+                System.out.println("Digite o novo Cargo:");
+                String funcao = scanner.nextLine();
+
+                usuario.setNome(nome);
+                usuario.setEmail(email);
+                usuario.setSenha(senha);
+                usuario.setFuncionario(funcionario);
+                usuario.setAdmin(admin);
+                usuario.setHorario(horario);
+                usuario.setFuncao(funcao);
+                System.out.println("Usuário atualizada com sucesso.");
+                return;
+            }
+        }
+        System.out.println("Usuário não encontrada com o ID fornecido.");
     }
 }
 

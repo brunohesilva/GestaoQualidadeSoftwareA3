@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f01b8dcf-be48-49b5-88a4-81c63e5c52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/Model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/UsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UsuarioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioTest.atualizaUsuario">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="source.Main" />
       <module name="SistemaFarmacia" />
@@ -143,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsuarioTest.atualizaUsuario" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UsuarioTest.atualizaUsuario" />
         <item itemvalue="JUnit.UsuarioTest.listaUsuario" />
         <item itemvalue="JUnit.UsuarioTest.cadastroUsuario" />
         <item itemvalue="JUnit.RemedioTest.deletaRemedio" />
@@ -162,7 +161,7 @@
       <workItem from="1685206789136" duration="8889000" />
       <workItem from="1685277032846" duration="5607000" />
       <workItem from="1686230271696" duration="15397000" />
-      <workItem from="1686316224722" duration="4026000" />
+      <workItem from="1686316224722" duration="4807000" />
     </task>
     <servers />
   </component>
@@ -179,7 +178,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/source/Main.java</url>
-          <line>180</line>
+          <line>184</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
