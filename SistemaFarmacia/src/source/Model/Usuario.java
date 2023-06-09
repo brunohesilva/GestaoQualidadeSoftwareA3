@@ -55,6 +55,35 @@ public class Usuario {
     public String getFuncao() {
         return funcao;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public void setFuncionario(int funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public void setAdmin(int admin) {
+        this.admin = admin;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+
     public boolean isFuncionario(){
         this.funcionario = 1;
         return true;
@@ -62,6 +91,15 @@ public class Usuario {
     public boolean isAdmin() {
         this.admin = 1;
         return true;
+    }
+
+    public boolean cadastroUsuario(Usuario usuario) {
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuário [idUsuario=" + idUsuario + ", nome=" + nome + ", cpf=" + cpf + ", email=" + email + ", senha=" + senha + ", funcionario=" + funcionario + ", horario=" + horario + ", funcao=" + funcao + ", admin=" + admin + "]";
     }
 
 }

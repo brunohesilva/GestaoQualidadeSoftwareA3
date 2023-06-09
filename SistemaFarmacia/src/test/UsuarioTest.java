@@ -48,5 +48,12 @@ class UsuarioTest {
     void isAdmin() {
         assertTrue(user1.isAdmin());
     }
+    @Test
+    void cadastroUsuario() {
+        UsuarioTest usuarioTest = new UsuarioTest();
+        Usuario usuario = new Usuario(1, "Bruno", 010101010101, "bruno@gmail.com", "senha123", 1, "09:00 até 16:00", "Gerente", 1);
+        boolean cadastrado = usuario.cadastroUsuario(usuario);
+        assertTrue(cadastrado);
+    }
 
 }
