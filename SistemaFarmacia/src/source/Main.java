@@ -34,9 +34,11 @@ public class Main extends JFrame {
             System.out.println("8. Busca Usuário por ID");
             System.out.println("9. Lista todos os Usuários");
             System.out.println("10. Atualiza usuário por ID");
+            System.out.println("11. Deleta um usuário por ID");
+            System.out.println("---------------------------");
+            System.out.println("0. Sair");
             System.out.println("---------------------------");
 
-            System.out.println("0. Sair");
 
             int choice = Integer.parseInt(scanner.nextLine());
 
@@ -70,6 +72,9 @@ public class Main extends JFrame {
                     break;
                 case 10:
                     atulizaUsuarioByIdUsuario();
+                    break;
+                case 11:
+                    deletaUsuario();
                     break;
                 case 0:
                     running = false;
@@ -297,6 +302,20 @@ public class Main extends JFrame {
                 usuario.setHorario(horario);
                 usuario.setFuncao(funcao);
                 System.out.println("Usuário atualizada com sucesso.");
+                return;
+            }
+        }
+        System.out.println("Usuário não encontrada com o ID fornecido.");
+    }
+
+    private static void deletaUsuario() {
+        System.out.println("Digite o ID do usuário");
+        int idUsuario = Integer.parseInt(scanner.nextLine());
+
+        for (Usuario usuario : usuarioList) {
+            if (usuario.getIdUsuario() == idUsuario) {
+                usuarioList.remove(usuario);
+                System.out.println("Usuário removida com sucesso.");
                 return;
             }
         }
