@@ -55,5 +55,13 @@ class UsuarioTest {
         boolean cadastrado = usuario.cadastroUsuario(usuario);
         assertTrue(cadastrado);
     }
+    @Test
+    void listaUsuario() {
+        UsuarioTest usuarioTest = new UsuarioTest();
+        Usuario usuario = user1.listaUsuario(1);
+        assertNotNull(usuario);
+        assertEquals(1, usuario.getIdUsuario());
+        assertEquals("Bruno", usuario.getNome());
+    }
 
 }

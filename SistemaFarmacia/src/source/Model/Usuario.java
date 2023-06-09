@@ -97,6 +97,14 @@ public class Usuario {
         return true;
     }
 
+    public Usuario listaUsuario(int idUsuario) {
+        if (idUsuario == 1) {
+            return new Usuario(idUsuario,nome, cpf, email,senha, funcionario, horario, funcao, admin);
+        } else {
+            return null;
+        }
+    }
+
     @Override
     public String toString() {
         return "Usuário [idUsuario=" + idUsuario + ", nome=" + nome + ", cpf=" + cpf + ", email=" + email + ", senha=" + senha + ", funcionario=" + funcionario + ", horario=" + horario + ", funcao=" + funcao + ", admin=" + admin + "]";
