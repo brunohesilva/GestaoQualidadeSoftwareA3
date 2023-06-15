@@ -38,6 +38,12 @@ public class TelaCadastroProduto extends JFrame {
                 frameLogin.add(new TelaLogin());
             }
         });
+        enviarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 }
 

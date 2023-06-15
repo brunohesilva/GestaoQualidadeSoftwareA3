@@ -33,6 +33,17 @@ public class Usuario {
         this.admin = admin;
     }
 
+    public Usuario(int idUsuario, String nome, String cpf, String email, int funcionario, String horario, String funcao, int admin) {
+        this.idUsuario = idUsuario;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.funcionario = funcionario;
+        this.horario = horario;
+        this.funcao = funcao;
+        this.admin = admin;
+    }
+
     public int getIdUsuario() {
         return this.idUsuario;
     }
@@ -55,6 +66,7 @@ public class Usuario {
     public String getFuncao() {
         return funcao;
     }
+    public int getADM(){ return admin; }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -62,6 +74,9 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public void setSenha(String senha) {
