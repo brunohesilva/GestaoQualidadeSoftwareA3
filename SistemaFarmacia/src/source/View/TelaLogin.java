@@ -38,7 +38,13 @@ public class TelaLogin extends JFrame{
 
                 var lista = usuarioController.GetUsuarios();
 
+                if(EmailTextField.getText().equals("admin") && new String(passwordField1.getPassword()).equals("admin")){
+                    frameLogin.dispose();
+                    JFrame frameAdmin = new JFrame("Tela Inicial");
+                    frameAdmin.add(new TelaAdmin());
+                }
                     for(int i = 0; i < lista.size(); i++){
+
                         if ((lista.get(i).getEmail().equals(EmailTextField.getText()) && lista.get(i).getSenha().equals(new String(passwordField1.getPassword()))) && lista.get(i).getADM() == 1) {
                         frameLogin.dispose();
                         JFrame frameAdmin = new JFrame("Tela Inicial");

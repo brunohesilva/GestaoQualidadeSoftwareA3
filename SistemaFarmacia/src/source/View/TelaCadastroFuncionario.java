@@ -10,7 +10,7 @@ import java.util.List;
 
 import source.Model.Usuario;
 
-public class TelaCadastroUsuario extends JFrame{
+public class TelaCadastroFuncionario extends JFrame{
     private static List<Usuario> usuarioList = new ArrayList<>();
     private JPanel CadastroFuncionarioPanel;
     private JButton voltarButton;
@@ -25,7 +25,7 @@ public class TelaCadastroUsuario extends JFrame{
     private JRadioButton funcionarioRadioButton;
     private JRadioButton administradorRadioButton2;
 
-    public TelaCadastroUsuario(){
+    public TelaCadastroFuncionario(){
         JFrame frameCadastroFuncionario = new JFrame("Cadastrar Funcionário");
         frameCadastroFuncionario.setContentPane(CadastroFuncionarioPanel);
         frameCadastroFuncionario.setTitle("Cadastrar Funcionário");
@@ -52,16 +52,16 @@ public class TelaCadastroUsuario extends JFrame{
                 usuarioController.CadastrarUsuario(Integer.parseInt(IdTextField.getText()), NomeTextField.getText(), CpfTextField.getText(), EmailTextField.getText(), SenhaTextField.getText(), trueOrFalseFuncionario, trueOrFalseAdm, HorarioTextField.getText(), FuncaoTextField.getText());
 
                 frameCadastroFuncionario.dispose();
-                JFrame TelaInicial = new JFrame("Tela Inicial");
-                TelaInicial.add(new TelaInicial());
+                JFrame TelaAdmin = new JFrame("Tela Inicial");
+                TelaAdmin.add(new TelaAdmin());
             }
         });
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frameCadastroFuncionario.dispose();
-                JFrame TelaInicial = new JFrame("Tela Inicial");
-                TelaInicial.add(new TelaInicial());
+                JFrame TelaAdmin = new JFrame("Tela Inicial");
+                TelaAdmin.add(new TelaAdmin());
             }
         });
     }

@@ -31,5 +31,18 @@ public class TelaCadastrarReceita  extends JFrame{
                 TelaInicial.add(new TelaInicial());
             }
         });
+        enviarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!NomeMedicoTextField.getText().equals("") && !NomePacienteTextField.getText().equals("") && !DataTextField.getText().equals("") && !NomeRemedioTextField.getText().equals("") && !UsoTextField.getText().equals("") &&  !CRMTextField.getText().equals("")){
+                    JOptionPane.showMessageDialog(null, "Receita cadastrada com sucesso!");
+                    frameCadastroReceita.dispose();
+                    JFrame telaInicialSemLogin = new JFrame("Tela Inicial");
+                    telaInicialSemLogin.add(new TelaInicialSemLogin());
+                }
+                else
+                    JOptionPane.showMessageDialog(null, "Preencha todos os campos!");
+            }
+        });
     }
 }

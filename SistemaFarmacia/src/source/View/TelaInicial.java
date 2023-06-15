@@ -36,8 +36,8 @@ public class TelaInicial extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frameInicial.dispose();
-                JFrame frameRegistro = new JFrame("Registrar Funcionário");
-                frameRegistro.add(new TelaCadastroUsuario());
+                JFrame frameRegistro = new JFrame("Registrar Usuário");
+                frameRegistro.add(new TelaCadastrarUsuario());
             }
         });
         continuarButton.addActionListener(new ActionListener() {

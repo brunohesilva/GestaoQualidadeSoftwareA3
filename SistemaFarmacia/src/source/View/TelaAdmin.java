@@ -1,6 +1,5 @@
 package source.View;
 
-import source.Controller.GenericController;
 import source.Controller.UsuarioController;
 
 import javax.swing.*;
@@ -37,7 +36,7 @@ public class TelaAdmin extends JFrame{
                 frameAdmin.dispose();
 //                frameInicial.dispose();
                 JFrame frameRegistro = new JFrame("Registrar Funcionário");
-                frameRegistro.add(new TelaCadastroUsuario());
+                frameRegistro.add(new TelaCadastroFuncionario());
             }
         });
         voltarButton.addActionListener(new ActionListener() {
