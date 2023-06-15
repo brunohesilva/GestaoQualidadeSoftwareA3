@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class TelaListarProdutos extends JFrame{
     private JPanel ListarProdutosPanel;
-    private JTable Produtos;
+    private JTable ProdutosTable;
 
     public TelaListarProdutos(){
         JFrame frameListarProdutos = new JFrame("Listar Produtos");
