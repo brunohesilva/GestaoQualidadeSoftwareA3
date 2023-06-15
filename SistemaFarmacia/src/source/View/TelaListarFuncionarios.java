@@ -35,10 +35,6 @@ public class TelaListarFuncionarios extends JFrame{
             private final String[] COLUMNS = {"Id", "Nome", "CPF", "Horário", "Função", "ADM"};
             private List<Usuario> usuarios = lista;
 
-//            private List<Usuario> TelaListarFuncionarios(List<Usuario> usuarios){
-//                return this.usuarios = usuarios;
-//            }
-
             @Override
             public int getRowCount() {
                 return usuarios.size();

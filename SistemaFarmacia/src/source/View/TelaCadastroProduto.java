@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 public class TelaCadastroProduto extends JFrame {
     private JPanel CadastroProdutoPanel;
-    private JTextField PesoTextField;
     private JTextField DescricaoTextField;
     private JTextField MarcaTextField;
     private JTextField TipoTextField;

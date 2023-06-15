@@ -60,8 +60,6 @@ public class UsuarioController {
 
         JFrame frame = new JFrame();
 
-
-
         frame.setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE) ;
         frame.setContentPane(root);
 
