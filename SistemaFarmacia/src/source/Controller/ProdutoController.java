@@ -1,6 +1,7 @@
 package source.Controller;
 
 import source.Model.Produto;
+import source.View.TelaListarProdutos;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -19,6 +20,23 @@ public class ProdutoController {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Ops, Algo deu errado!");
         }
+    };
+    public static void ListagemProdutos(){
+        TelaListarProdutos ui = new TelaListarProdutos();
+
+        JPanel root = ui.getListarProdutosPanel();
+
+        JFrame frame = new JFrame();
+
+        frame.setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE) ;
+        frame.setContentPane(root);
+
+        frame.pack();
+
+        frame.setTitle("Cadastrar Produtos");
+        frame.setSize(800, 600);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 
 
