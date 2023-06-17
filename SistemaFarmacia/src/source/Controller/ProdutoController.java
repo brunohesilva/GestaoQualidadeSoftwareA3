@@ -1,6 +1,7 @@
 package source.Controller;
 
 import source.Model.Produto;
+import source.Model.Usuario;
 import source.View.TelaListarProdutos;
 
 import javax.swing.*;
@@ -38,7 +39,19 @@ public class ProdutoController {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
+    public static void DeletarUsuario(int id) {
+        try {
+            for(Produto produto : produtoList){
+                if(id == produto.getIdProduto()){
+                    produtoList.remove(produto);
+                }
+            }
+            JOptionPane.showMessageDialog(null, "Produto removido com sucesso!");
 
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ops, Algo deu errado!");
+        }
+    };
 
     
     public static List<Produto> GetProdutos(){ return produtoList;

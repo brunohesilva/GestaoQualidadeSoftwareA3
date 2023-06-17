@@ -37,7 +37,7 @@ public class TelaListarProdutos extends JFrame{
 
         ProdutosTable.setModel(new AbstractTableModel() {
 
-            private final String[] COLUMNS = {"Id", "Nome", "CPF", "Horário", "Função", "ADM"};
+            private final String[] COLUMNS = {"Id", "Nome", "Descrição", "Marca", "Necessário Receita", "Quantidade"};
             private List<Produto> produtos = lista;
 
             @Override

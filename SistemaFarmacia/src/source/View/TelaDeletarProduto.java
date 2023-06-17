@@ -1,30 +1,44 @@
 package source.View;
 
+import source.Controller.ProdutoController;
+import source.Model.Produto;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaDeletarProduto extends JFrame{
-    private JTextField idTextField;
+    private JTextField IdTextField;
     private JButton deletarButton;
     private JButton voltarButton;
     private JPanel DeletarProdutoPanel;
 
 
     public TelaDeletarProduto(){
-        JFrame frameCadastroProduto = new JFrame("Deletar Produto");
-        frameCadastroProduto.setContentPane(DeletarProdutoPanel);
-        frameCadastroProduto.setTitle("Deletar Produto");
-        frameCadastroProduto.setDefaultCloseOperation((EXIT_ON_CLOSE));
-        frameCadastroProduto.setSize(800, 600);
-        frameCadastroProduto.setLocationRelativeTo(null);
-        frameCadastroProduto.setVisible(true);
+        JFrame frameDeletarProduto = new JFrame("Deletar Produto");
+        frameDeletarProduto.setContentPane(DeletarProdutoPanel);
+        frameDeletarProduto.setTitle("Deletar Produto");
+        frameDeletarProduto.setDefaultCloseOperation((EXIT_ON_CLOSE));
+        frameDeletarProduto.setSize(800, 600);
+        frameDeletarProduto.setLocationRelativeTo(null);
+        frameDeletarProduto.setVisible(true);
         deletarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                ProdutoController produtoController = new ProdutoController();
+                var lista = produtoController.GetProdutos();
+                for(Produto produto : lista){
+                    if(Integer.parseInt(IdTextField.getText()) == produto.getIdProduto()){
+                        produtoController.DeletarUsuario(produto.getIdProduto());
+                        frameDeletarProduto.dispose();
+                        JFrame TelaAdm = new JFrame("Tela Inicial");
+                        TelaAdm.add(new TelaAdmin());
+                    }
+                }
             }
         });
+
+
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
