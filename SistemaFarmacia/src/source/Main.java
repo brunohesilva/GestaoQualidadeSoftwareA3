@@ -3,10 +3,9 @@ package source;
 import javax.swing.*;
 
 import source.Model.Receita;
-import source.Model.Remedio;
+import source.Model.Produto;
 import source.Model.Usuario;
 import source.View.TelaInicial;
-import source.View.TelaListarFuncionarios;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.Scanner;
 public class Main extends JFrame {
     private static Scanner scanner = new Scanner(System.in);
     private static List<Receita> receitaList = new ArrayList<>();
-    private static List<Remedio> remedioList = new ArrayList<>();
+    private static List<Produto> produtoList = new ArrayList<>();
     private static List<Usuario> usuarioList = new ArrayList<>();
 
     public static void main(String[] args) {

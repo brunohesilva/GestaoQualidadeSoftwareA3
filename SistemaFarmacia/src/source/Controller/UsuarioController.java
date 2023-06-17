@@ -19,7 +19,7 @@ public class UsuarioController {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Ops, Algo deu errado!");
         }
-    };
+    }
     public static void AtualizarUsuario(int id, String nome, String cpf, String horario, String funcao) {
         try {
             for(Usuario usuario : usuarioList){
