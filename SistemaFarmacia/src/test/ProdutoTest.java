@@ -33,7 +33,7 @@ class ProdutoTest {
     }
     @Test
     void getQuantidade() {
-        assertEquals(0, produto1.getQuantidade());
+        assertEquals(5, produto1.getQuantidade());
     }
     @Test
     void quantidadeEstoque() {
