@@ -13,7 +13,7 @@ public class TelaCadastroProduto extends JFrame {
     private JTextField MarcaTextField;
     private JTextField TipoTextField;
     private JTextField QuantidadeTextField;
-    private JRadioButton necessarioReceitaRadioButton;
+    private JRadioButton necessárioReceitaRadioButton;
     private JTextField IdTextField;
     private JButton enviarButton;
     private JButton voltarButton;
@@ -31,13 +31,14 @@ public class TelaCadastroProduto extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 var trueOrFalseNecessarioReceita = 0;
-                if (necessarioReceitaRadioButton.isSelected())
+                if (necessárioReceitaRadioButton.isSelected())
                     trueOrFalseNecessarioReceita = 1;
                 else
                     trueOrFalseNecessarioReceita = 0;
 
                 ProdutoController produtoController = new ProdutoController();
                 produtoController.CadastrarProduto(Integer.parseInt(IdTextField.getText()), NomeTextField.getText(), DescricaoTextField.getText(), MarcaTextField.getText(), trueOrFalseNecessarioReceita, Integer.parseInt(QuantidadeTextField.getText()));
+
                 frameCadastroProduto.dispose();
                 JFrame TelaAdmin = new JFrame("Tela Inicial");
                 TelaAdmin.add(new TelaAdmin());
