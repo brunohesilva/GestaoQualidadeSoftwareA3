@@ -29,7 +29,11 @@ class ProdutoTest {
     }
     @Test
     void getNecessarioReceita() {
-        assertEquals("pilula", produto1.getNecessarioReceita());
+        assertEquals(0, produto1.getNecessarioReceita());
+    }
+    @Test
+    void getQuantidade() {
+        assertEquals(0, produto1.getQuantidade());
     }
     @Test
     void quantidadeEstoque() {
