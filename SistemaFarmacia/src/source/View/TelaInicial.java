@@ -5,8 +5,6 @@ import source.Controller.GenericController;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ContainerAdapter;
-import java.awt.event.ContainerEvent;
 
 public class TelaInicial extends JFrame {
     private JPanel JpanelInicial;
@@ -14,6 +12,10 @@ public class TelaInicial extends JFrame {
     private JButton continuarButton;
     private JButton loginButton;
     private GenericController genericController;
+
+    public JPanel getTelaInicial() {
+        return JpanelInicial;
+    }
     public TelaInicial(){
          JFrame frameInicial = new JFrame("Inicial");
          frameInicial.setContentPane(JpanelInicial);
@@ -26,8 +28,24 @@ public class TelaInicial extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frameInicial.dispose();
-                 JFrame frameLogin = new JFrame("Login");
-                  frameLogin.add(new TelaLogin());
+                JFrame frameLogin = new JFrame("Login");
+                frameLogin.add(new TelaLogin());
+            }
+        });
+        cadastroButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frameInicial.dispose();
+                JFrame frameRegistro = new JFrame("Registrar Usuário");
+                frameRegistro.add(new TelaCadastrarUsuario());
+            }
+        });
+        continuarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frameInicial.dispose();
+                JFrame frameTelaSemLogin = new JFrame("Tela Inicial");
+                frameTelaSemLogin.add(new TelaInicialSemLogin());
             }
         });
     }

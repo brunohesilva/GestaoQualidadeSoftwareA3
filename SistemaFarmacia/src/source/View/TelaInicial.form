@@ -17,22 +17,6 @@
     </clientProperties>
     <border type="none"/>
     <children>
-      <component id="58c56" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-16777216"/>
-          <font name="Inconsolata" size="28" style="1"/>
-          <foreground color="-1"/>
-          <maximumSize width="450" height="29"/>
-          <minimumSize width="450" height="29"/>
-          <opaque value="false"/>
-          <preferredSize width="450" height="29"/>
-          <requestFocusEnabled value="false"/>
-          <text value="Seja Bem-Vindo à FarmaJapa!!"/>
-        </properties>
-      </component>
       <component id="3fc2b" class="javax.swing.JButton" binding="cadastroButton" default-binding="true">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -55,6 +39,22 @@
         </constraints>
         <properties>
           <text value="Login"/>
+        </properties>
+      </component>
+      <component id="58c56" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Inconsolata" size="28" style="1"/>
+          <foreground color="-1"/>
+          <maximumSize width="450" height="29"/>
+          <minimumSize width="450" height="29"/>
+          <opaque value="false"/>
+          <preferredSize width="450" height="29"/>
+          <requestFocusEnabled value="false"/>
+          <text value="Seja Bem-Vindo à FarmaJapa!!"/>
         </properties>
       </component>
     </children>
