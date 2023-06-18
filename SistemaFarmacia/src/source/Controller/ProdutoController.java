@@ -49,6 +49,7 @@ public class ProdutoController {
             for(Produto produto : produtoList){
                 if(id == produto.getIdProduto()){
                     produtoList.remove(produto);
+                    break;
                 }
             }
             JOptionPane.showMessageDialog(null, "Produto removido com sucesso!");

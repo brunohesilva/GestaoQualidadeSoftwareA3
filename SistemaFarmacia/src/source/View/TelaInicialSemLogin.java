@@ -1,5 +1,10 @@
 package source.View;
 
+import source.Controller.ProdutoController;
+import source.Controller.UsuarioController;
+import source.Model.Produto;
+import source.Model.Usuario;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -32,6 +37,13 @@ public class TelaInicialSemLogin extends JFrame{
                 frameInicialSemLogin.dispose();
                 JFrame frameTelaInicial = new JFrame("Tela Inicial");
                 frameTelaInicial.add(new TelaInicial());
+            }
+        });
+        listarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ProdutoController produtoController = new ProdutoController();
+                produtoController.ListagemProdutos();
             }
         });
     }

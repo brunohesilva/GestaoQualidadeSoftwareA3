@@ -28,7 +28,7 @@ public class TelaDeletarUsuario extends JFrame{
             var lista = usuarioController.GetUsuarios();
             for(Usuario usuario : lista){
                 if(Integer.parseInt(IdTextField.getText()) == usuario.getIdUsuario()){
-                    usuarioController.DeletarUsuario(usuario.getIdUsuario());
+                    usuarioController.DeletarUsuario(Integer.parseInt(IdTextField.getText()));
                     frameDeletarUsuario.dispose();
                     JFrame telaAdm = new JFrame("Tela Inicial");
                     telaAdm.add(new TelaAdmin());

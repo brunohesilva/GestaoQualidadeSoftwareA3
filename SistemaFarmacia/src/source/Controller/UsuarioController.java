@@ -45,11 +45,13 @@ public class UsuarioController {
             for(Usuario usuario : usuarioList){
                 if(id == usuario.getIdUsuario()){
                     usuarioList.remove(usuario);
+                    break;
                 }
             }
             JOptionPane.showMessageDialog(null, "Usuário removido com sucesso!");
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Ops, Algo deu errado!");
         }
     };
