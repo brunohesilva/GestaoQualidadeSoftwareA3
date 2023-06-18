@@ -13,7 +13,7 @@ public class ProdutoController {
     private static List<Produto> produtoList = new ArrayList<>();
 
     public static void CadastrarProduto(int idRemedio, String nome,String descricao, String marca, int necessarioReceita, int quantidade) {
-        try {
+            try {
             Produto produto = new Produto(idRemedio, nome, descricao, marca, necessarioReceita, quantidade);
             produtoList.add(produto);
             JOptionPane.showMessageDialog(null, "Produto criado com sucesso!");

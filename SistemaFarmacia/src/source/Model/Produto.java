@@ -53,7 +53,7 @@ public class Produto {
         this.marca = marca;
     }
 
-    public void setNecessarioReceita(String tipo) {
+    public void setNecessarioReceita(int necessarioReceita) {
         this.necessarioReceita = necessarioReceita;
     }
 
@@ -85,7 +85,7 @@ public class Produto {
     }
     @Override
     public String toString() {
-        return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", tipo=" + necessarioReceita + ", quantidade=" + quantidade + "]";
+        return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", descrição=" + descricao + ", marca=" + marca + ", necessarioReceita?=" + necessarioReceita + ", quantidade=" + quantidade + "]";
     }
 
 }
