@@ -40,22 +40,16 @@ public class TelaCadastroProduto extends JFrame {
                 produtoController.CadastrarProduto(Integer.parseInt(IdTextField.getText()), NomeTextField.getText(), DescricaoTextField.getText(), MarcaTextField.getText(), trueOrFalseNecessarioReceita, Integer.parseInt(QuantidadeTextField.getText()));
 
                 frameCadastroProduto.dispose();
-                JFrame TelaAdmin = new JFrame("Tela Inicial");
-                TelaAdmin.add(new TelaAdmin());
+                JFrame frameTelaFuncionario = new JFrame("Tela Inicial Funcionário");
+                frameTelaFuncionario.add(new TelaInicialFuncionario());
             }
         });
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frameCadastroProduto.dispose();
-                JFrame frameLogin = new JFrame("Login");
-                frameLogin.add(new TelaLogin());
-            }
-        });
-        enviarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
+                JFrame frameTelaFuncionario = new JFrame("Tela Inicial Funcionário");
+                frameTelaFuncionario.add(new TelaInicialFuncionario());
             }
         });
     }

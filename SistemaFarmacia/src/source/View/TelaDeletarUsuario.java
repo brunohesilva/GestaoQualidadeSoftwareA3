@@ -30,8 +30,8 @@ public class TelaDeletarUsuario extends JFrame{
                 if(Integer.parseInt(IdTextField.getText()) == usuario.getIdUsuario()){
                     usuarioController.DeletarUsuario(usuario.getIdUsuario());
                     frameDeletarUsuario.dispose();
-                    JFrame TelaAdm = new JFrame("Tela Inicial");
-                    TelaAdm.add(new TelaAdmin());
+                    JFrame telaAdm = new JFrame("Tela Inicial");
+                    telaAdm.add(new TelaAdmin());
                 }
             }
         }
@@ -40,8 +40,8 @@ public class TelaDeletarUsuario extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 frameDeletarUsuario.dispose();
-                JFrame TelaAdm = new JFrame("Tela Inicial");
-                TelaAdm.add(new TelaAdmin());
+                JFrame telaAdm = new JFrame("Tela Inicial");
+                telaAdm.add(new TelaAdmin());
             }
         });
     }

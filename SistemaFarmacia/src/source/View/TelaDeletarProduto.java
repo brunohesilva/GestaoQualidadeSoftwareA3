@@ -29,20 +29,20 @@ public class TelaDeletarProduto extends JFrame{
                 var lista = produtoController.GetProdutos();
                 for(Produto produto : lista){
                     if(Integer.parseInt(IdTextField.getText()) == produto.getIdProduto()){
-                        produtoController.DeletarUsuario(produto.getIdProduto());
+                        produtoController.DeletarProduto(produto.getIdProduto());
                         frameDeletarProduto.dispose();
-                        JFrame TelaAdm = new JFrame("Tela Inicial");
-                        TelaAdm.add(new TelaAdmin());
+                        JFrame telaInicialFuncionario = new JFrame("Tela Inicial Funcionário");
+                        telaInicialFuncionario.add(new TelaInicialFuncionario());
                     }
                 }
             }
         });
-
-
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                frameDeletarProduto.dispose();
+                JFrame telaInicialFuncionario = new JFrame("Tela Inicial Funcionário");
+                telaInicialFuncionario.add(new TelaInicialFuncionario());
             }
         });
     }

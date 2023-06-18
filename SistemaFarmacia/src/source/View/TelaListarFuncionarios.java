@@ -17,9 +17,7 @@ public class TelaListarFuncionarios extends JFrame{
     private JTable FuncionariosTable;
     private JScrollPane JSCrollPane;
 
-        public TelaListarFuncionarios() {
-            createTable();
-        }
+        public TelaListarFuncionarios() { createTable(); }
 
     public JPanel getListarFuncionariosPanel() {
         return ListarFuncionariosPanel;
